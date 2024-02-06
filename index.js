@@ -53,7 +53,7 @@ function renderEvents() {
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete Event";
     li.append(deleteButton);
-    deleteButton.addEventListener("click", deleteEvent(event, () => { deleteEvent(event.id); }));
+    deleteButton.addEventListener("click", () => { deleteEvent(event.id); });
 
     return li;
   });
